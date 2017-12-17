@@ -22,7 +22,7 @@ stock_var[which.min(stock_var)]
 stock_var[which.max(stock_var)]
 
 #Hooking up MySQL
-con <- dbConnect(RMySQL::MySQL(), dbname = 'nasdaq', username = 'root', password = 'Mark0401Xuan_')
+con <- dbConnect(RMySQL::MySQL(), dbname = 'nasdaq', username = 'root', password = '****')
 dbListTables(con)     #Looking up tables
 
 #Batching and inserting first 1340500 rows into the database
