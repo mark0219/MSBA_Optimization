@@ -1,0 +1,36 @@
+rm(list=ls())
+# Vectors
+my.vec <- scan(file = 'vectordata.csv', sep=',',what = 'character')
+length(my.vec)
+my.vec <- scan('vectordata.csv','character',,,',')
+# Matrices
+m1 <- matrix(1:20,nrow=5)
+m1
+r.names <- c('R1', 'R2')
+c.names <- c('C1', 'C2')
+m2 <- matrix(c(1, 26, 24, 68),byrow=T,nrow=2,
+	dimnames=list(r.names, c.names))
+m2
+m3 <- matrix(c(1, 26, 24, 68),byrow=F,nrow=2,
+	dimnames=list(r.names, c.names))
+m3
+m2[1, 2]
+m2[1,  ]
+m2[ , 2]
+m2[ , 2][2]
+(x <- matrix(1:10, nrow = 2))
+x[1, 4:5]
+x[1:2,c(2,4)][2, 2]
+ 
+#Arrays
+d1.names <- c('A1', 'A2')
+d2.names <- c('B1', 'B2', 'B3')
+d3.names <- c('C1', 'C2', 'C3', 'C4')
+a1 <- array(1:24, c(2, 3, 4),
+  dimnames = list(d1.names, d2.names, d3.names))
+a1[,,4]
+a1[,1,]
+
+
+
+
