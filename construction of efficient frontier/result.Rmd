@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 The included graph depicts various levels of portfolio return for different levels of variance. As portfolio variance increases, portfolio return increases. This is because higher risk investment strategies tend to have higher retruns at the expense of higher variability. Our optimal portfolio 
 ```{r}
 require(RMySQL)
-con <- dbConnect(RMySQL::MySQL(), dbname = 'nasdaq', username = 'root', password = 'Mark0401Xuan_')
+con <- dbConnect(RMySQL::MySQL(), dbname = 'nasdaq', username = 'root', password = '****')
 query <- dbSendQuery(con, 'select * from portfolio')
 portfolio_var_ret <- fetch(query)
 plot(portfolio_var_ret, pch = 16, type = 'l', xlab = 'Portfolio Variance', ylab = 'Portfolio Return', main = 'Efficient Frontier for NASDAQ Equity Portfolio')
