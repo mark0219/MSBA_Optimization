@@ -5,7 +5,7 @@ import MySQLdb as mySQL
 
 #Hooking up with MySql
 db = mySQL.connect(user = 'root', 
-                   passwd = 'Mark0401Xuan_', 
+                   passwd = '****', 
                    host = 'localhost', 
                    db = 'nasdaq')
 cur = db.cursor()
@@ -88,49 +88,4 @@ for i in range(50):
 for i in range(len(risk_return_combs)):
     cur.execute("""insert into portfolio value (%s, %s)""", (risk_return_combs[i][0], risk_return_combs[i][1]))
     db.commit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
