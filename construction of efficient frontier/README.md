@@ -5,3 +5,5 @@ R: Read .csv file, calculated and melted covariance matrix, dumped data into MyS
 Python: Read data from MySQL, executed Gurobi commands, dumped data into MySQL database
 Gurobi: Calculated optimal portfolio weights as quadratic optimization problems
 MySQL: Database
+
+Database file is zipped as "nasdaq.zip"
